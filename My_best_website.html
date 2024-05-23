@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {color:white;
+        background:silver;
+       
+            margin: 0px;
+            padding: 0px;
+            font-family:Arial;
+        }
+
+        ul {
+        margin-top:5px;
+            position: fixed;
+            opacity:.7;
+            
+
+        }
+
+        ul li {
+            background-color: darkgreen;
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            font-family: "Times New Roman";
+        }
+        ul li:hover {
+            background-color: black;
+            color: white;
+            padding-left: 23px;
+            transistion: 0.8s;
+
+        }
+
+        .logo {
+        position:absolute;
+            padding: 0px;
+            margin-left:80px;
+            top:25px;
+            height:60px;
+            width: 65px;
+            text-align: center;
+        }
+        h1 {color:black;
+        margin-left:23px;
+        font-size:44px;
+        text-align:center;
+            font-family: "Bebas Neue";
+        }
+        .fa {
+            margin-right: 10px;
+        }
+        .menu ul li {
+            margin: 50px;
+        }
+        
+        .drop {
+            display: none;
+        }
+        
+        ul li:hover .drop {
+            display:block;
+            
+            margin: 0px;
+            border-bottom: 1px dotted blue;
+        }
+        
+        
+      
+       
+        
+     
+        .slider {
+            margin-top: 250px;
+            width: 400px;
+            height: 350px;
+            margin-left: 60px;
+            background-image: url(1.jpg) ;
+            background-repeat: no-repeat;
+            background-size: contain;
+            animation: slide 20s infinite;
+        }
+@keyframes slide {
+            25% {
+                background-image: url(2.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+
+            }
+            50% {
+                background-image: url(3.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            75% {
+                background-image: url(4.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            100% {
+                background-image: url(1.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        .reading-progress-bar-container {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+
+
+        }
+
+        .reading-progress-bar {
+
+            height: 5px;
+            background: lightgreen;
+            animation-name: width;
+            animation-timeline: scroll(y);
+        }
+@keyframes width {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reading-progress-bar-container">
+
+        <div class="reading-progress-bar"></div>
+    </div>
+    <h1>South zone secondary school</h1>
+    <img class="logo" src="logo.png">
+    <ul>
+        <li><i class="fa fa-home"></i>Home</li>
+
+        <li><i class="fa fa-book-open"></i>Facilities<i class="fa-solid fa-angle-down" style="color: orange;"></i>
+            <div class="sub-menu-1">
+                <ul class="drop">
+                    <div><li>Computer Lab</li></div>
+                    <div><li>Music Class </li></div>
+                  <div>  <li> Av class </li></div>
+                </ul>
+            </div>
+            <li><i class="fa fa-star"></i>Our Achievements</li>
+            <li><i class="fa fa-location-dot"></i>Our Location</li>
+            <li><i class="fa fa-phone"></i>Contact us</li>
+        </ul>
+        
+        <div class="slider"></div>
+        <pre>sj
+            hs
+            js
+            hs
+            ns
+            b
+            h
+            b
+            ba
+            hs
+            js
+            bs
+            hs
+           
+            
+           
+          
+        </body>
+    </html>
